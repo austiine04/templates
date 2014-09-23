@@ -1,0 +1,463 @@
+
+.menu
+{
+	margin-bottom: 40px;
+	text-align: center;
+	color: #999;
+}
+
+	.menu a
+	{
+		color: #999;
+	}
+	
+	.menu a.active
+	{
+		font-weight: bold;
+	}
+
+
+/* Showcase
+-------------*/
+
+#awOnePageButton .view-slide
+{
+	display: none;
+}
+
+/* This class is removed after the showcase is loaded */
+/* Assign the correct showcase height to prevent loading jumps in IE */
+.showcase-load
+{
+	height: 501px; /* Same as showcase javascript option */
+	overflow: hidden;
+}
+
+/* Container when content is shown as one page */
+.showcase-onepage
+{
+	/**/
+}
+
+/* Container when content is shown in slider */
+.showcase
+{
+	position: relative;
+	margin: auto;
+	overflow:hidden;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+		padding-bottom:3px;
+		background:#000;
+	width: 1255px;
+}
+
+	.showcase-content-container
+	{
+		float: left;
+		overflow: visible !important;
+		width: 955px;
+	}
+	
+	/* Navigation arrows */
+	.showcase-arrow-previous, .showcase-arrow-next
+	{
+		position: absolute;
+		width: 33px;
+		height: 33px;
+		top: 220px;
+		cursor: pointer;
+		background:#000;
+	}
+	
+	.showcase-arrow-previous
+	{
+		left: -60px;
+	}
+	
+	.showcase-arrow-previous:hover
+	{
+		background-position: 0px -34px;
+	}
+	
+	.showcase-arrow-next
+	{
+		right: -56px;
+		background-position: -34px 0;
+	}
+	
+	.showcase-arrow-next:hover
+	{
+		background-position: -34px -34px;
+	}
+	
+	/* Content */
+	.showcase-content
+	{
+		/*text-align: center;*/
+		background: #000;
+		padding-bottom: 3px;
+	}
+		
+		.showcase-content-wrapper
+		{
+			text-align: center;
+			height: 501px;
+			width: 700px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		/* Styling the tooltips */
+		.showcase-plus-anchor
+		{
+			background-repeat: no-repeat;
+		}
+		
+		.showcase-plus-anchor:hover
+		{
+			background-position: -32px 0;
+		}
+		
+		div.showcase-tooltip
+		{
+			background-color: #fff;
+			color: #000;
+			text-align: left;
+			padding: 5px 8px;
+		}
+		
+		/* Styling the caption */
+		.showcase-caption
+		{	
+			font-family: 'PT Serif Caption', serif;
+			font-style:italic;
+			padding: 0 25px;
+			text-align: left;
+			position: absolute;
+			bottom: 3px; left: 0; right: 0;
+			zoom: 1;
+			height: 73px;
+			background: #000;
+			opacity: 0.6;
+		}
+		.showcase-caption h4 {
+			color: #CCC;
+			line-height: 73px;
+			margin: 0;
+			margin-left: 61px; 
+			font-size: 16px;
+			font-family: 'PT Serif Caption', serif;
+			font-style:italic;
+		}
+		.showcase-caption h4 span {color:#f74211}
+
+	.showcase-onepage .showcase-content
+	{
+		margin-bottom: 10px;
+	}
+	
+	/* Button Wrapper */
+	.showcase-button-wrapper
+	{
+		clear: both;
+		height: 68px;
+		*height: 45px;
+		line-height: 73px;
+		*line-height: 90px;
+		width: 163px;
+		position: absolute;
+		bottom: 6px;
+		right: 300px;
+		text-align: center;
+		vertical-align: middle;
+		display: inline;
+		zoom:1;
+	}
+	
+		.showcase-button-wrapper span
+		{
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+			text-indent: 4000px;
+			*text-indent: 0;
+			margin-right: 3px;
+		    width: 8px;
+		    height: 7px;
+		    background: url(../images/icons/slider-item.png) no-repeat;
+		    background-position: 0 -9px;
+		    vertical-align: middle;
+            *vertical-align: text-bottom;
+		}
+	
+		.showcase-button-wrapper span.active
+		{
+			background-position: 0 0;
+		}
+
+	.divider_line img{
+		position:absolute;
+		right:250px;
+		top:35px;
+		
+	}
+	
+	/* Thumbnails */
+	.showcase-thumbnail-container /* Used for backgrounds, no other styling!!! */
+	{
+		background:  url(../images/temp/thumbnail_bg.png);
+	}
+	
+	.showcase-thumbnail-wrapper
+	{
+		overflow: hidden;
+	}
+		
+		.showcase-thumbnail
+		{
+			width: 240px;
+			height: 80px;
+			cursor: pointer;
+			border: 0;
+			position: relative;
+			margin-left: 61px;
+			padding-top: 15px;
+		}
+		
+			.showcase-thumbnail-caption
+			{
+				position: absolute;
+				bottom: 2px;
+				padding-left: 10px;
+				padding-bottom: 5px;
+			}
+			
+			.showcase-thumbnail-content
+			{
+				padding: 20px 10px 10px 35px;
+				text-align: left;
+				color:#fff;
+				overflow:hidden;
+			}
+			
+			/*.showcase-thumbnail-cover
+			{
+				background-image: url(../images/black-opacity-40.png);
+				position: absolute;
+				top: 0; bottom: 0; left: 0; right: 0;
+			}*/
+		
+		.showcase-thumbnail:hover
+		{
+			border: none
+		}
+		
+			.showcase-thumbnail:hover .showcase-thumbnail-cover
+			{
+				display: none;
+			}
+		
+		.showcase-thumbnail.active
+		{
+			/*border: solid 1px #999;*/
+		}
+		
+			.showcase-thumbnail.active .showcase-thumbnail-cover
+			{
+				display: none;
+			}
+	
+	.showcase-thumbnail-wrapper-horizontal
+	{
+		padding: 10px;
+	}
+	
+		.showcase-thumbnail-wrapper-horizontal .showcase-thumbnail
+		{
+			margin-right: 10px;
+			width: 116px;
+		}
+	
+	/*.showcase-thumbnail-wrapper-vertical
+	{
+		padding: 10px;
+	}
+	
+		.showcase-thumbnail-wrapper-vertical .showcase-thumbnail
+		{
+			margin-bottom: 10px;
+		}*/
+		
+	.showcase-thumbnail-button-backward,
+	.showcase-thumbnail-button-forward
+	{
+		cursor: pointer;
+		text-align: center;
+	 	font-size: 13px;
+	 	font-family: 'Lato', serif;
+	 	color: #b2b2b2;
+	 	text-shadow: 0px 1px 1px #000;
+	 	margin-left: 11px;
+	}
+	  .showcase-thumbnail-button-forward {
+	 	margin-top: 41px;	
+	 	margin-bottom: 20px;
+	 }
+	/*.showcase-thumbnail-button-backward
+	{
+		padding-bottom: 0px;
+		padding-right: 0px;
+	}*/
+
+	 .active .showcase-thumbnail-vertical {
+	 	color: #df4900 !important;
+	 	font-size: 11px !important;
+	 }
+	
+	/*	.showcase-thumbnail-button-backward .showcase-thumbnail-vertical,
+		.showcase-thumbnail-button-forward .showcase-thumbnail-vertical,
+		.showcase-thumbnail-button-forward .showcase-thumbnail-horizontal,
+		.showcase-thumbnail-button-backward .showcase-thumbnail-horizontal
+		{
+			background-image: url(../images/arrows-small.png);
+			background-repeat: no-repeat;
+			display: block;
+			width: 17px;
+			height: 17px;
+		}*/
+		
+		.showcase-thumbnail-button-backward .showcase-thumbnail-vertical
+		{
+			background-position: 0 -51px;
+			/*margin-left: 55px;*/
+		}
+		.showcase-thumbnail-button-backward:hover .showcase-thumbnail-vertical
+		{
+			background-position: -17px -51px;
+		}
+		
+		.showcase-thumbnail-button-forward .showcase-thumbnail-vertical
+		{
+			background-position: 0 -34px;
+			/*margin-left: 55px;*/
+		}
+		.showcase-thumbnail-button-forward:hover .showcase-thumbnail-vertical
+		{
+			background-position: -17px -34px;
+		}
+		
+		.showcase-thumbnail-button-backward .showcase-thumbnail-horizontal
+		{
+			background-position: 0 -17px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.showcase-thumbnail-button-backward:hover .showcase-thumbnail-horizontal
+		{
+			background-position: -17px -17px;
+		}
+		
+		.showcase-thumbnail-button-forward .showcase-thumbnail-horizontal
+		{
+			background-position: 0 0;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.showcase-thumbnail-button-forward:hover .showcase-thumbnail-horizontal
+		{
+			background-position: -17px 0;
+		}
+		
+		/* Hide button text */
+		/*.showcase-thumbnail-button-forward span span,
+		.showcase-thumbnail-button-backward span span
+		{
+			display: none;
+		}*/
+/*-------------------------------------------*/
+
+	
+
+/*.showcase-thumbnail-container {
+	height: 501px;
+	width: 297px;
+}*/
+
+.showcase-slider-item {
+	margin: 0;
+}
+.showcase-slider-item li {
+	display: inline-block;
+}
+i {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	zoom: 1;
+	overflow: hidden;
+	text-decoration: none;
+	font-style: normal;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+ .showcase-thumbnail-button-backward {
+ 	margin-top: 42px;
+ }
+ .showcase-thumbnail-content h5 {
+ 	font-size: 16px;
+ 	color: #fff;
+ 	margin-bottom: 0px;
+ 	font-weight:bold;
+ }
+ .showcase-thumbnail-content p {
+ 	font-size: 11px;
+ 	color: #acacac;
+ 	font-family: 'PT Serif Caption', serif;
+ 	font-style: italic;
+ 	margin-bottom: 0;
+ }
+  .slider-date {
+    position: absolute;
+    top: 41px;
+    left: -29px;
+    vertical-align: baseline;
+    background: url(../images/icons/ribbon-date.png) no-repeat;
+    text-align:center;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+ }
+ .slider-date span.month {
+ 	color: #b2b2b2;
+ 	font-size: 6.5px;
+ 	text-transform: uppercase;
+ 	text-shadow: 0px 1px 1px #000;
+ 	font-weight: bolder;
+ }
+ .slider-date span.date {
+    font-size: 18px;
+    text-shadow: 0px 1px 1px #000;
+    display: block;
+    margin: -5px 0 0 -3px;
+ }
+ .text_yellow {
+ 	color: #ffdf4a;
+ }
+ 
+/* Clear (used for horizontal thumbnails)
+-------------------------------------------*/
+
+.clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	float: none;
+}
+
